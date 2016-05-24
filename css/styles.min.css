@@ -183,8 +183,8 @@ th {
 }@font-face {
     font-family: 'Glyphicons Halflings';
 
-    src: url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.eot);
-    src: url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.woff) format('woff'),url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+    src: url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.eot);
+    src: url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.woff) format('woff'),url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(http://skinandtonic.shoporama.dk/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }.glyphicon {
     font-family: 'Glyphicons Halflings';
     font-weight: 400;
@@ -3890,8 +3890,8 @@ vidcontainer-embed iframe {
     font-weight: 400;
     font-style: normal;
 
-    src: url(../fonts/socialicons.eot);
-    src: url(../fonts/socialicons.eot?#iefix) format('embedded-opentype'),url(../fonts/socialicons.woff) format('woff'),url(../fonts/socialicons.ttf) format('truetype'),url(../fonts/socialicons.svg#socialicons) format('svg');
+    src: url(http://skinandtonic.shoporama.dk/fonts/socialicons.eot);
+    src: url(http://skinandtonic.shoporama.dk/fonts/socialicons.eot?#iefix) format('embedded-opentype'),url(http://skinandtonic.shoporama.dk/fonts/socialicons.woff) format('woff'),url(http://skinandtonic.shoporama.dk/fonts/socialicons.ttf) format('truetype'),url(http://skinandtonic.shoporama.dk/fonts/socialicons.svg#socialicons) format('svg');
 }[data-icon]:before {
     font-family: socialicons!important;
     font-weight: 400!important;
