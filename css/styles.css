@@ -5735,7 +5735,7 @@ body.toggled-sitenav #sitenav li._active a {
     z-index: 1100;
     left: 0;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    margin-top: -20px;
+    margin-top: 2px;
   }
 }
 @media (min-width: 992px) {
