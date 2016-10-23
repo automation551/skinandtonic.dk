@@ -5127,11 +5127,11 @@ vidcontainer-embed iframe {
   top: 0;
 }
 #logo-container {
-  text-align: center;
+  text-align: left;
 }
 #logo-container #logo {
   display: block;
-  margin: 15px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 @media (max-width: 768px) {
   #logo-container #logo {
@@ -6440,7 +6440,7 @@ body.toggled-basket #basket {
 }
 @media (min-width: 768px) {
   #brandidentity {
-    min-height: 500px;
+    min-height: 300px;
   }
 }
 #brandidentity #brandidentity-overlay {
