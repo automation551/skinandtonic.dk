@@ -147,13 +147,6 @@
                                 </div>
                                 <!--/#form-checks-->
 
-                              Test
-                              <{assign var="shippings" value=$webshop->getShippings()}>
-                              <{section name="i" loop=$shippings}>
-                                <label for="shipping<{$shippings[i]->getShippingId()}>"><{$shippings[i]->getName()|escape}> <{$shippings[i]->getCost()|number_format:2:",":"."}> <{$webshop->getCurrency()}></label>
-                                <input class="shipping" type="radio" module="<{$shippings[i]->getModule()|escape}>" value="<{$shippings[i]->getShippingId()}>" name="shipping_id" id="shipping<{$shippings[i]->getShippingId()}>" <{if $session_del.shipping_id == $shippings[i]->getShippingId()}>checked="checked"<{/if}>/>
-                              <{/section}>
-
                                 <input type="hidden" name="skip_next" value="true"/>
 
                                 <button type="submit" name="next" id="checkout-next-btn" class="btn btn-primary btn-lg pull-right inactive" onClick="_gaq.push(['_trackEvent', 'Checkout', 'Nextstep', 'Approve']);" value=" " />
