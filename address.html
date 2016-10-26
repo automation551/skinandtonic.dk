@@ -55,7 +55,7 @@
 
                                   <{if $session_del.country_id != 1431}>
                                   <{assign var="shippings" value=$webshop->getShippings()}>
-                                    <div style="display: none">
+                                    <div style="">
                                       <{section name="i" loop=$shippings}>
                                         <input class="shipping" type="radio" module="<{$shippings[i]->getModule()|escape}>" value="<{$shippings[i]->getShippingId()}>" name="shipping_id" id="shipping<{$shippings[i]->getShippingId()}>" checked="checked"/>
                                       <{/section}>
