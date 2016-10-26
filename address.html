@@ -147,7 +147,7 @@
                                 </div>
                                 <!--/#form-checks-->
 
-                                
+                              Test
                               <{assign var="shippings" value=$webshop->getShippings()}>
                               <{section name="i" loop=$shippings}>
                                 <label for="shipping<{$shippings[i]->getShippingId()}>"><{$shippings[i]->getName()|escape}> <{$shippings[i]->getCost()|number_format:2:",":"."}> <{$webshop->getCurrency()}></label>
