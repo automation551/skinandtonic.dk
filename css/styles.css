@@ -5151,7 +5151,7 @@ vidcontainer-embed iframe {
 }
 @media (min-width: 992px) {
   #logo-container #logo {
-    margin: 15px auto auto auto;
+    margin: 10px auto auto auto;
     width: auto;
   }
 }
@@ -5786,18 +5786,10 @@ body.toggled-basket #basket {
 }
 #product-list-head {
   margin: 20px 0 20px 0;
-  text-align: center;
+  text-align: left;
 }
 #product-list-head h1 {
   font-weight: 700;
-}
-#product-list-head h1:after {
-  content: '—';
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 0;
-  display: block;
-  margin: 15px;
 }
 #product-list-foot {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -5808,7 +5800,7 @@ body.toggled-basket #basket {
   height: 200px;
 }
 .categorydescription {
-  text-align: center;
+  text-align: left;
 }
 .categorydescription.descA {
   padding-bottom: 20px;
