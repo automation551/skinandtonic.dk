@@ -6942,9 +6942,9 @@ button.voucher-active {
   background: #fafafa;
   border: 0 none;
   height: 50px;
-  line-height: 50px;
+  line-height: 40px;
   margin-bottom: 20px;
-  padding: 15px 15px 5px 15px;
+  padding: 15px 15px 10px 15px;
   border: 1px solid #ccc;
 }
 .form-row textarea {
