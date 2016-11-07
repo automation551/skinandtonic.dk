@@ -862,6 +862,11 @@ body.outlook p {
 							<ul>
 								<{section name="i" loop=$products}>
 									<li>
+
+                                                            <{assign var="images" value=$products[i]->getImages()}>
+                                                          <{section name="j" loop=$images max=1}>
+                                                            <img src="<{$images[j]->getSrc(30, 30, 'box')}>">
+                                                          <{/section}><br>
 										<strong><{$products[i]->getAmount()}> stk. <{$products[i]->getName()|escape}></strong>
 										<{assign var="attributes" value=$products[i]->getAttributes()}>
 										<{if $attributes}>
