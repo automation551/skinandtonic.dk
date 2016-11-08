@@ -1,7 +1,7 @@
 <{strip}>
 <{assign var="profile" value=$product->getProfile()}>
 <{assign var="attr" value=$profile->getAttributeList()}>
-<{if $product->getIsInStock()}>
+<{if $product->getAllowNegativeStock()}>
 	<form action="" method="post" id="putinbasketform">
 		<input type="hidden" name="product_id" value="<{$product->getProductId()}>"/>
 		<input type="hidden" name="redirect" value="<{$product->getMetaValue('redirect')|escape}>"/>
@@ -19,7 +19,7 @@
 					                    <{section name="k" loop=$values}>
 					                        <{assign var="attribute_price" value=$product->getAttributePrice($values[k]->getAttributeValueId())}>
 					                        <{if $product->getInStock($attr[j]->getAttributeId(), $values[k]->getAttributeValueId()) > 0}>
-					                        	<option value="<{$values[k]->getAttributeValueId()}>" data-stockamount="<{$product->getInStock($attr[j]->getAttributeId(), $values[k]->getAttributeValueId())}>">
+					                        	<option value="<{$values[k]->getAttributeValueId()}>" data-stockamount="<{$product->getAllowNegativeStock($attr[j]->getAttributeId(), $values[k]->getAttributeValueId())}>">
 					                                <{$values[k]->getVal()|escape}>
 					                                <{if $attribute_price}>
 					                                    &nbsp;(<{$attribute_price|number_format:2:",":"."}> <{$webshop->getCurrency()}>)
@@ -41,7 +41,7 @@
 
 				</div>
 				<{else}>
-					<input type="hidden" id="single-stock-amount" value="<{$product->getInStock($attributes[0].id, $attributes[0].value_id)}>">
+					<input type="hidden" id="single-stock-amount" value="<{$product->getAllowNegativeStock($attributes[0].id, $attributes[0].value_id)}>">
 	        <{/if}>
 	        <div class="input-group">
 	            <input type="text" class="form-control" name="amount" id="amount-input" value="1">
