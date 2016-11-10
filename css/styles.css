@@ -5427,14 +5427,16 @@ vidcontainer-embed iframe {
 #sitenav ul > li .subnav-expander {
   float: right;
   height: 50px;
-  width: 50px;
   line-height: 50px;
   border: 0;
   border-left: 1px solid #efefef;
   background: transparent;
   font-size: 180%;
-  padding: 0;
   margin: 0;
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  padding: 0px 0.5em;
 }
 @media (min-width: 992px) {
   #sitenav ul > li .subnav-expander {
@@ -5445,7 +5447,7 @@ vidcontainer-embed iframe {
   content: '+';
 }
 #sitenav ul > li .subnav-expander.expanded {
-  background: #f5f5f5;
+  background: transparent;
 }
 #sitenav ul > li .subnav-expander.expanded:before {
   content: '–';
