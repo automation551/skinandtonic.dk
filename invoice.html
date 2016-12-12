@@ -833,7 +833,7 @@ body.outlook p {
 
                       <table class="twelve columns">
                         <tr>
-                          <td align="center" style="text-align:center"><img src="logo.png" style="width:180px;" /></td>
+                          <td align="center" style="text-align:center"><img src="<{$webshop->getUrl()}>logo.png" style="width:180px;" /></td>
                         </tr>
                         <tr>
                           <td>
@@ -865,7 +865,7 @@ body.outlook p {
 
                                                             <{assign var="images" value=$products[i]->getImages()}>
                                                           <{section name="j" loop=$images max=1}>
-                                                            <img src="<{$images[j]->getSrc(30, 30, 'box')}>">
+                                                            <img src="<{$webshop->getUrl()}><{$images[j]->getSrc(30, 30, 'box')}>">
                                                           <{/section}><br>
 										<strong><{$products[i]->getAmount()}> stk. <{$products[i]->getName()|escape}></strong>
 										<{assign var="attributes" value=$products[i]->getAttributes()}>
