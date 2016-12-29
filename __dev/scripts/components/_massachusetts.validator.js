@@ -22,21 +22,7 @@ massachusetts.validator = massachusetts.validator || function () {
 
 		}
 
-		if ($('#single-stock-amount').length > 0) {
-
-			$('.putinbasket').click(function() {
-
-				if( $('#amount-input').val() > $('#single-stock-amount').val()){
-
-					alert('Vi har desværre ikke så mange på lager af denne vare');
-
-					return false;
-
-          		}
-
-			});
-
-		}
+		
 
 	}
 
