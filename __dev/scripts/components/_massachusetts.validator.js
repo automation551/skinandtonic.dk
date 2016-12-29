@@ -18,14 +18,7 @@ massachusetts.validator = massachusetts.validator || function () {
 
           			return false;
 
-          		} else if( $('#amount-input').val() > $('select.variant').find(':selected').data('stockamount') ){
-
-					alert('Vi har desværre ikke så mange på lager af denne variant');
-
-					return false;
-
-          		}
-			});
+          		}			});
 
 		}
 
