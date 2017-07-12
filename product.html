@@ -2,7 +2,8 @@
 <{capture name="title"}><{$product->getName()}><{/capture}>
 
 <{assign var="images" value=$product->getImages()}>
-
+<script> _fbq.push('track', 'ViewContent', {content_ids: ['<{$product->getProductId()}>'], content_type: 'product'}); </script>
+    
 <div id="site" class="productpage">
     <{include file="_include_header.html"}>
 
