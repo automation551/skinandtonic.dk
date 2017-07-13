@@ -1,5 +1,9 @@
 <{include file="_include_ecommerce-tracking.html"}>
-
+    
+<script type="text/javascript">
+        fbq('track', 'Purchase', {value: '<{$order->getPrice()|number_format:2:".":""}>', currency: 'DKK'});
+    </script>
+    
 <div id="site" class="checkout">
 
     <{include file="_include_checkout-header.html"}>
