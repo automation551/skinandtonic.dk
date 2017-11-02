@@ -44,7 +44,7 @@
                     <{math assign="savepercent" equation='c/d*100' c=$pricedif d=$product->getPrice()}>
                     -<{$savepercent|number_format:0}>%
                 </div>
-            <{elseif $product->getOnlineHours() < 480}>
+            <{elseif $product->getOnlineHours() < 120}>
                 <div class="product-teaser-highlight news">NYHED</div>
             <{/if}>
 
