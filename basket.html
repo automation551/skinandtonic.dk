@@ -86,6 +86,7 @@
 
 		                <div id="basket-summary">
 							<span id="basket-vat">Moms udgør: <{$webshop->getCurrency()}> <{$vat|number_format:2:",":"."}></span>
+							<div style="display : none;">
 							<span id="basket-content-shipping">Fragt (leveres til) <span class="country-selecter"><{assign var="countries" value=$webshop->getCountries()}>
 							<{if $countries}>
 									<select name="del_country_id" onchange="$('#form').submit();" id="basket-country" required>
@@ -95,6 +96,7 @@
 										<{/section}>
 									</select>
 							<{/if}></span></span>
+							</div>
 						</div>
 
 
