@@ -66,7 +66,7 @@
 									<img src="<{$images[j]->getSrc(30, 30, 'box')}>" style="float:left;">
 								<{/section}>
 								<span class="basket-content-listitem-amount"><{$products[i]->getAmount()}> stk.</span> <strong><{$products[i]->getName()|escape}><{assign var="attributes" value=$products[i]->getAttributes()}><{if $attributes}><div class="basket-content-listitem-attr"><{section name="j" loop=$attributes}><span><{$attributes[j].name}>: <{$attributes[j].val}></span><{/section}></div><{/if}></strong></div>
-							<div class="col-xs-12 col-sm-4 col-md-3 right"><{$webshop->getCurrency()}> <{$products[i]->getUnitPrice()|number_format:2:",":"."}></div>
+							<div class="col-xs-12 col-sm-4 col-md-3 right"><{$webshop->getCurrency()}> <{$products[i]->getUnitPrice($products[i]->getAmount())|number_format:2:",":"."}></div>
 						</li>
 					<{/section}>
 
