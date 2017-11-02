@@ -30,7 +30,7 @@
                                   <div class="form-row form-row-input">
                                     <div class="form-row-zip">
                                       <label for="order_zipcode">Postnr.</label>
-                                      <input type="text" name="order_zipcode" value="" id="order_zipcode" placeholder="Postnr."  required/>
+                                      <input type="tel" name="order_zipcode" value="" id="order_zipcode" placeholder="Postnr."  required/>
                                     </div>
                                     <div class="form-row-city">
                                       <label for="order_city">By</label>
@@ -99,7 +99,7 @@
                                   <div class="form-row form-row-input">
                                     <div class="form-row-zip">
                                       <label for="del_zipcode">Postnr.</label>
-                                      <input type="text" name="del_zipcode" value="" placeholder="Postnr." id="del_zipcode" />
+                                      <input type="tel" name="del_zipcode" value="" placeholder="Postnr." id="del_zipcode" />
                                     </div>
                                     <div class="form-row-city">
                                       <label for="del_city">By</label>
@@ -132,7 +132,7 @@
                                     <label class="checkboxlabel">
                                       <input type="checkbox" name="terms_accept" checked="checked" id="terms_accept" required/> Ja, jeg accepterer <a href="/betingelser" target="_blank" id="terms_accept_trigger">handels- og leveringsbetingelserne</a></label>
                                   </div>
-                                  <div id="payment-options" class="form-row">
+                                  <div id="payment-options" style="display : none;" class="form-row">
                                     <h3>Vælg betalingsmetode</h3>
                                   <{assign var="gateways" value=$webshop->getPaymentGateways()}>
                                 	<{section name="i" loop=$gateways}>
