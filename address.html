@@ -21,20 +21,20 @@
                                 <div id="payment-address">
                                   <div class="form-row form-row-input">
                                     <label for="order_name">Navn</label>
-                                    <input type="text" name="order_name" value="" id="order_name" placeholder="Navn" class="" required/>
+                                    <input type="text" name="order_name" value="<{$session_order.name|escape}>" id="order_name" placeholder="Navn" class="" required/>
                                   </div>
                                   <div class="form-row form-row-input">
                                     <label for="order_address">Adresse</label>
-                                    <input type="text" name="order_address" value="" id="order_address" placeholder="Adresse" class="" required/>
+                                    <input type="text" name="order_address" value="<{$session_order.address|escape}>" id="order_address" placeholder="Adresse" class="" required/>
                                   </div>
                                   <div class="form-row form-row-input">
                                     <div class="form-row-zip">
                                       <label for="order_zipcode">Postnr.</label>
-                                      <input type="tel" name="order_zipcode" value="" id="order_zipcode" placeholder="Postnr."  required/>
+                                      <input type="tel" name="order_zipcode" value="<{$session_order.zipcode|escape}>" id="order_zipcode" placeholder="Postnr."  required/>
                                     </div>
                                     <div class="form-row-city">
                                       <label for="order_city">By</label>
-                                      <input type="text" name="order_city" value="" id="order_city" placeholder="By"  required/>
+                                      <input type="text" name="order_city" value="<{$session_order.city|escape}>" id="order_city" placeholder="By"  required/>
                                     </div>
                                   </div>
 
@@ -65,11 +65,11 @@
 
                                   <div class="form-row form-row-input">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" value="" id="email" placeholder="Email" class="" required/>
+                                    <input type="email" name="email" value="<{$session_order.email|escape}>" id="email" placeholder="Email" class="" required/>
                                   </div>
                                   <div class="form-row form-row-input">
                                     <label for="phone">Telefonnummer</label>
-                                    <input type="tel" name="phone" value="" id="phone" placeholder="Telefonnr." class="" required />
+                                    <input type="tel" name="phone" value="<{$session_order.phone|escape}>" id="phone" placeholder="Telefonnr." class="" required />
                                   </div>
                                   <div class="form-row form-row-textarea">
                                     <label class="label" for="comments">Har du en kommentar?</label>
@@ -90,20 +90,20 @@
                                   <h3>Leveringsadresse</h3>
                                   <div class="form-row form-row-input">
                                     <label for="del_name">Navn</label>
-                                    <input type="text" name="del_name" value="" placeholder="Navn" id="del_name"/>
+                                    <input type="text" name="del_name" value="<{$session_del.name|escape}>" placeholder="Navn" id="del_name"/>
                                   </div>
                                   <div class="form-row form-row-input">
                                     <label for="del_address">Adresse</label>
-                                    <input type="text" name="del_address" value="" placeholder="Adresse" id="del_address"/>
+                                    <input type="text" name="del_address" value="<{$session_del.address|escape}>" placeholder="Adresse" id="del_address"/>
                                   </div>
                                   <div class="form-row form-row-input">
                                     <div class="form-row-zip">
                                       <label for="del_zipcode">Postnr.</label>
-                                      <input type="tel" name="del_zipcode" value="" placeholder="Postnr." id="del_zipcode" />
+                                      <input type="tel" name="del_zipcode" value="<{$session_del.zipcode|escape}>" placeholder="Postnr." id="del_zipcode" />
                                     </div>
                                     <div class="form-row-city">
                                       <label for="del_city">By</label>
-                                      <input type="text" name="del_city" value="" placeholder="By" id="del_city" />
+                                      <input type="text" name="del_city" value="<{$session_del.city|escape}>" placeholder="By" id="del_city" />
                                     </div>
                                   </div>
                                 </div>
