@@ -90,7 +90,7 @@
 		<label>
 			<input type="radio" name="payment_gateway_id" value="<{$gateways[i]->getPaymentGatewayId()}>" <{if $selected_payment_gateway == $gateways[i]->getPaymentGatewayId()}>checked="checked"<{/if}>/>
 			<{$gateways[i]->getName()|escape}>
-		</label>
+		</label><br>
 	<{/section}>
 							
 							
