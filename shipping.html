@@ -9,7 +9,7 @@
 			<section id="checkout-content">
 				<div class="container"><div class="row">
 
-					<h1>Fragt</h1>
+					<h1>Fragt & betalingsmetode</h1>
 					<script type="text/javascript">
 						$(document).ready(function() {
 
@@ -84,6 +84,16 @@
 						<div class="clear"></div>
 						<br>
 						<br>
+							<h3>Hvordan vil du betale?</h3>
+							<{assign var="gateways" value=$webshop->getPaymentGateways()}>
+	<{section name="i" loop=$gateways}>
+		<label>
+			<input type="radio" name="payment_gateway_id" value="<{$gateways[i]->getPaymentGatewayId()}>" <{if $selected_payment_gateway == $gateways[i]->getPaymentGatewayId()}>checked="checked"<{/if}>/>
+			<{$gateways[i]->getName()|escape}>
+		</label>
+	<{/section}>
+							
+							
 
 						<input type="button" name="prev" value="&laquo; Leveringsadresse" class="btn btn-default" onclick="history.go(-1);"/>
 						<input type="submit" name="next" value="Gå til betaling &raquo;" class="btn btn-primary" />
